@@ -1,3 +1,11 @@
+"""
+Bubble Sort
+-----------
+Time Complexity:
+- Average: O(n^2)
+- Worst: O(n^2)
+"""
+
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -14,3 +22,10 @@ def bubble_sort(arr):
             break
 
     return arr
+
+
+if __name__ == "__main__":
+    example = [48, 32, 95, 2, 62, 14, 90]
+    print("Original list:", example)
+    sorted_list = bubble_sort(example)
+    print("Sorted list:", sorted_list)
